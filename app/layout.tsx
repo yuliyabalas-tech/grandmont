@@ -1,9 +1,5 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Manrope } from 'next/font/google';
 import './globals.css';
-
-const sans = Manrope({ variable: '--font-sans', subsets: ['latin', 'latin-ext'] });
-const serif = Cormorant_Garamond({ variable: '--font-serif', subsets: ['latin', 'latin-ext'], weight: ['400','500','600'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://grandmont-group.sites.openai.com'),
@@ -26,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
-      <body className={`${sans.variable} ${serif.variable}`}>
+      <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Organization', name: 'GRANDMONT GROUP s.r.o.',
           address: { '@type': 'PostalAddress', streetAddress: 'Na Čečeličce 425/4', addressLocality: 'Praha 5', addressCountry: 'CZ' }
