@@ -26,6 +26,9 @@ Create a **Web Service** from the GitHub repository and use:
 - Run command: `pnpm start`
 - HTTP port: use the port provided in the `PORT` environment variable
 
+Set `NEXT_PUBLIC_CONTACT_EMAIL` in DigitalOcean to the address that should
+receive messages from the single contact form.
+
 DigitalOcean uses the standard Next.js build and does not load `vite.config.ts`
 or `.openai/hosting.json`. Those files are retained only for optional OpenAI
 Sites deployment. If DigitalOcean has a manually configured build command,
